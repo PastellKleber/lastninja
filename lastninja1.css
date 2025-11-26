@@ -1,0 +1,447 @@
+/* lastninja1.css */
+
+/* HTML root: background */
+html { margin:0; 
+       padding:0; 
+       background-color:#FAF9F6; 
+       font-family:"Arial", sans-serif;
+       font-size:26px;
+       font-weight: 500;
+       
+       line-height: 1.4;
+       }
+
+/* HTML body: invisible container */
+body { width:50rem; margin:auto auto; color:#000000; align-items:center;}
+
+     
+/* HTML main sections */
+nav,header,article,footer	{ width:100%; 
+                               margin:0rem 0; 
+                               padding:0rem 0rem; 
+                               background-color:#FAF9F6; }
+nav,header					{ text-align:center; }
+nav							{ background-color:#333333; 
+                                 color:white; 
+                                 font-family:Tahoma, Geneva, sans-serif; }
+
+/* HTML text divisions */
+div							{ position:relative; 
+                                 margin:0.5rem 0; 
+                                 padding-bottom:0.75rem; }
+div.div1:not(:last-child)	{ border-bottom:0.08rem solid black; }
+div.div2:not(:last-child)	{ border-bottom:0.07rem dotted #bbbbbb; }
+
+/* HTML text blocks */
+
+h1,h2,h3,h4,h5,h6	{ font-family:"Arial", 
+                       sans-serif; 
+                       padding:0.25rem 0; 
+                       margin:0 5rem; 
+                       font-size:28px;
+                       
+                       line-height: 1.1;}
+                       
+p					{ text-align:justify; 
+                      padding:0rem 0; 
+                      margin:-0.25rem 5rem; 
+                      position:relative;                      
+                      line-height: 1.2;
+                     }
+
+
+article[data-tei='body'] img {
+    display: block; 
+    width: 18rem; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0.5rem 5rem; 
+    box-sizing: border-box; 
+    border-radius: 4px; }
+
+.note-popup img.lpkasten {
+    max-width: 50%;  
+    height: auto;     
+    display: block;   
+    padding: 0.5rem;
+    transform: none;
+    margin: 0rem 5rem;
+}
+
+/*CSS für Karte in Infoblock*/
+img.map               {width: 38%;
+                    transform: translateX(-10.5rem);
+                    padding-top: 1rem;
+                    padding-bottom: 0;
+                    }
+figcaption.map {
+    font-size: 0.7em;
+    margin-top: 0em;
+    color: #555;
+    text-align:left;
+    transform: translateX(4.5rem);
+}  
+
+img.packaging               {width: 30%;
+                    transform: translateX(-10.5rem);
+                    padding-top: 1rem;
+                    padding-bottom: 0;
+                    }
+figcaption.packaging {
+    font-size: 0.7em;
+    margin-top: 0em;
+    color: #555;
+    text-align:left;
+    transform: translateX(4.5rem);
+}
+
+img.packaging2               {width: 5%;
+                    transform: translateX(-10.5rem);
+                    padding-top: 1rem;
+                    padding-bottom: 0;
+                    }
+figcaption.packaging2 {
+    font-size: 0.7em;
+    margin-top: 0em;
+    color: #555;
+    text-align:left;
+    transform: translateX(4.5rem);
+}
+
+/*Allgemein figure*/
+figure {
+    margin: 1em auto;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.7em;
+    margin-top: 0em;
+    text-align:left;
+    transform: translateX(5rem);
+} 
+/* HTML lists */
+ul		{ list-style-type:none; padding:0; margin:0.5rem 0; }
+ul li	{ margin:0.5rem 0; text-align:left; }
+
+/* HTML hyperlinks */
+a				{ text-decoration:none; color:#0000aa; }
+nav a, footer a	{ color:#0088ff;}
+span.note a		{ color:#eeee77;}
+
+/* block rendition attributes */
+
+.alignCenter	{ text-align:center; }
+.alignLeft		{ text-align:left; }
+.alignRight		{ text-align:right; }
+
+/*verschiedene header*/
+
+.head          	{ font-family:"Arial", 
+                   sans-serif; 
+                   line-height:1.5rem; 
+                   font-weight:600; 
+                   font-style:normal; 
+                   margin:1rem  -1rem; 
+                }
+
+/*verschiedene Absätze*/
+
+.twoColums		{ column-count:2; }
+
+                   
+/* inline rendition attributes */ 
+.picture        { font-size:19px;
+                  font-weight: bold;} 
+.allcaps		{ /*nothing*/ }
+.code			{ font-family:"Courier New", Courier, monospace; 
+                  color:#333333;}
+
+.block			{ display:block; margin:0.5rem 0; }
+.inverted		{ background-color:black; 
+                   color:white; 
+                   padding-left:2px; 
+                   padding-right:2px; }
+.spaced			{ white-space:pre; }
+.underlined		{ text-decoration:underline; }
+.dashed         { text-decoration:underline;
+                  text-decoration-style: dashed;
+                   }
+.bold              { font-weight: bold; }
+
+/* topography */
+.leftMargin		{ position:absolute; left:-2rem; }
+.rightMargin	{ position:absolute; right:-2rem; }
+.editorialMark	{ color:#bbbbbb; 
+                    text-indent:0; 
+                    line-height:1rem; 
+                    vertical-align:middle; }
+.editorialText	{ color:#777777;
+                    text-indent:0; 
+                    font-style:oblique; }
+
+/* semantics */
+a[data-tei='name']		{ color:#dd8855;}
+a[data-tei='orgName']	{ color:#00cc55;}
+a[data-tei='persName']	{ color:#880000;}
+a[data-tei='title']		{ color:#cc44cc;}
+
+
+/*Infokasten in Front*/
+#info {font-size:20px;
+       }
+
+/*CSS für das feste Inhaltsverzeichnis */
+
+#toc-container {
+    position: fixed; 
+    top: 20px;
+    left: 20px;
+    background-color: rgba(220, 220, 220, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 9999; 
+    font-size: 0.9em;
+    line-height: 1.1;
+    width: 250px;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden; 
+}
+
+/* Header-Bereich des TOC (enthält Titel und Toggle-Button) */
+.toc-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 0.25rem; 
+    border-bottom: 0.5px solid #eee;
+    padding-bottom: 0.25rem;
+}
+
+.toc-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+}
+
+/* Styles für den TOC-Toggle-Button */
+#toc-button {
+    position: fixed; 
+    top: 20px;           
+    left: 20px; 
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#toc-button:hover {
+    background-color: #555;
+}
+
+/* Inhaltsbereich des TOC (die Links) */
+#toc-content {
+    max-height: calc(100vh - 120px);
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1; 
+    visibility: visible;
+    padding: 0.25rem;
+}
+
+/* Zustand, wenn das TOC eingeklappt ist */
+#toc-container.closed {
+    padding: 0.5rem;
+    border-bottom: none;
+    box-shadow: none; 
+    width: 0px; 
+    height: 0px; 
+    background-color: rgba(220, 220, 220, 0.2);
+}
+
+/* notes */
+span.term {
+    position: relative; 
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #777777;
+}
+
+
+/* CSS für Note-pop-up */
+
+.note-popup {
+    opacity: 0;
+    visibility: hidden;
+    display: block; 
+    box-sizing: border-box; 
+    position: fixed;
+    top: 50px; 
+    right: -27rem;
+    width: 25rem; 
+    height: calc(100vh - 100px);
+    overflow-y: auto; 
+    background-color: rgba(220, 220, 220, 0.9); 
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    padding: 2.5rem; 
+    z-index: 9998; 
+    text-align: left;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition-delay: 0.2s; 
+}
+
+/* Zeigt das Popup an, wenn man über das .term-Element hovert */
+.term:hover > .note-popup {
+    right: 20px; 
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s; 
+}
+
+/* Verzögertes Verschwinden, wenn der Hover endet */
+.note-popup {
+    transition-delay: 0.2s, 0.2s, 0.2s;
+}
+
+/*Styles für Bilder innerhalb der Notiz-Popups */
+.note-popup img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    border-radius: 4px;
+    transform: translateX(-4rem);
+}
+
+/* Emulator */
+     
+#emulator-container {
+ position: fixed;
+  top: 8px;
+  right: 15px; 
+  width: 700px;
+  height: 600px;
+  z-index: 1000;
+  background-color: rgba(220, 220, 220, 0.9);
+  border: 0.5px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+              padding 0.3s ease-in-out, background-color 0.3s ease-in-out,
+              border-radius 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+#emulator {
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+
+#emulator-container.closed {
+  width: 20px;
+  height: 20px; 
+  padding: 5px;
+  background-color: rgba(220, 220, 220, 0.2); 
+  border-radius: 8px; 
+  box-shadow: none; 
+  transform: none;
+}
+
+/* Styles für den Toggle-Button */
+#emulator-button {
+      position: absolute;
+    top: -12px; 
+    right: -12px; 
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    font-size: 1em;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 1001; 
+  }
+  
+#emulator-button:hover {
+    background-color: #555;}
+    
+/* Audio-Container und Button */
+
+.audio-container {
+  display: flex;
+  align-items: center; 
+  gap: 50px; 
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 5rem; 
+}
+
+.audio-container h1,
+.audio-container h2,
+.audio-container h3 {
+  margin: 0; 
+  flex-shrink: 1; 
+  min-width: 0;   
+}
+
+.play-pause-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.8em;
+  min-width: 20px;
+  text-align: center;
+  
+  flex-shrink: 0; 
+  width: auto;    
+  height: auto;
+}
+
+.play-pause-button:hover {
+  background-color: #555;
+}
+ 
+.audio-player {
+  display: none;
+}
+
+/* CSS für den YouTube-Video-Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0.5rem 5rem; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
